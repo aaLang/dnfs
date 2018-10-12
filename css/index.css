@@ -188,6 +188,7 @@ a:hover{
 }
 .top .top_logo .logo_sousu .sousu2:hover{
 	cursor:pointer;
+	
 	background-color:#ba000e;
 }
 .top .top_logo .logo_sousu a{
@@ -232,16 +233,17 @@ a:hover{
 	width:1365px;
 	height:420px;
 	position:absolute;
+	z-index:-1;
 }
 .banner span{
 	display:block;
 	width:48px;
 	height:103px;
-	z-index:1;
+	z-index:0;
 }
 .banner #leftJian{
 	position:absolute;
-	left:315px;
+	left:322px;
 	top:160px;
 	background:url(../img/next.png) -10px -10px no-repeat;
 }
@@ -250,12 +252,102 @@ a:hover{
 }
 .banner #rightJian{
 	position:absolute;
-	left:995px;
+	left:1005px;
 	top:160px;
 	background:url(../img/next.png) -68px -10px no-repeat;
 }
 .banner #rightJian:hover{
 	background:url(../img/next.png) -68px -124px no-repeat;
+}
+.banner .ban_box{
+	width:1122px;
+	height:420px;
+	margin:0 auto;
+	z-index:-1;
+}
+.banner .ban_box .ban_left{
+	width:200px;
+	height:420px;
+	background-color:#ef5c28;
+	float:left;
+}
+.banner .ban_box .ban_left .ban_leftchild{
+	/*width:205px;*/
+	height:102px;
+	border-bottom:1px solid #e2450e;
+	/*overflow:hidden;*/
+}
+.banner .ban_box .ban_left .ban_leftchild .bna_left11{
+	height:82px;
+	width:185px;
+	position:relative;
+	padding-left:15px;
+	padding-top:20px;
+	overflow:hidden;
+}
+.banner .ban_box .ban_left .ban_leftchild .bna_left11:hover{
+	overflow: inherit;
+}
+.banner .ban_box .ban_left:nth-child(1) .shouc{
+	color:#fff;
+	font-size:16px;
+	padding-left:25px;
+	background:url(../img/nav_bj.png) 0px -104px no-repeat;
+}
+.banner .ban_box  .bna_left111{
+	height:92px;
+	width:500px;
+	position:absolute;
+	background:#e2450e;
+	top:0;
+	left:0;
+	padding-top:10px;
+}
+.banner .ban_box .ban_left:nth-child(1) a{
+	color:#fff;
+	padding:5px;
+	font-size:14px;
+	margin-right:22px;
+}
+.banner .ban_box .ban_right{
+	width:190px;
+	height:420px;
+	float:right;
+	opacity:0.6;
+}
+.banner .ban_box .ban_right .ban_right-top{
+	width:178px;
+	height:179px;
+	background:#c9c8cd;
+	margin-bottom:2px;
+	padding-left:12px;
+	padding-top:20px;
+}
+.banner .ban_box .ban_right .ban_right-top span{
+	width:150px;
+	height:14px;
+	font-size:14px;
+	line-height:14px;
+	display:block;
+	text-indent:10px;
+	margin-bottom:15px;
+	background: url(../img/dian2.png) left center no-repeat;
+}
+.banner .ban_box .ban_right .ban_right-top a{
+	color:black;
+	font-size:12px;
+	line-height:24px;
+}
+.banner .ban_box .ban_right .ban_right-botm{
+	background:#c9c8cd;
+	height:239px;
+	overflow:hidden;
+}
+.banner .ban_box .ban_right .ban_right-botm img{
+	display:block;
+	width:190px;
+	height:239px;
+	z-index:1;
 }
 /*侧边栏*/	
 .right{
@@ -342,25 +434,73 @@ a:hover{
 /*侧边栏礼包隐藏部分*/
 .right_mum .liBao{
 	width:300px;
-	height:321px;
+	min-height:320px;
 	position:absolute;
 	top:0px;
 	right:46px;
 	background:#fff;
 	border:1px solid black;
 	border-right:none;
-	z-index:6;
+	display:none;
 }
 .right_mum .liBao .lb_top{
 	height:34px;
+	width:258px;
 	background:url(../img/cdk_top.jpg) no-repeat;
 	padding-left:160px;
+	margin:15px 0 10px 15px;
 }
 .right_mum .liBao .lb_top a{
 	color:#a01f23;
 	font-size:12px;
 	border:1px solid #a01f23;
-	line-height:;
+	display:block;
+	width:80px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+}
+.right_mum .liBao .lb_bottom1{
+	width:260px;
+	margin-bottom:6px;
+}
+.right_mum .liBao .xians-1{
+	font-size:14px;
+	padding-left:25px;
+	margin-left:10px;
+	line-height:32px;
+	background:url(../img/right_dian.png) 10px 12px no-repeat #ccc;
+}
+.right_mum .liBao .lb_bottom1 .spa{
+	display:none;
+}
+.right_mum .liBao .lb_bottom1 .spa1{
+	display:inline-block;
+}
+.right_mum .liBao .lb_bottom1 b{
+	font-weight:100;
+	color:black;
+}
+.right_mum .liBao .lb_bottom1 .bb1{
+	color:#a01f23;
+}
+.right_mum .liBao .yinc_1{
+	margin-left:10px;
+	width:228px;
+	padding:10px;
+	color:#333333;
+	font-size:12px;
+	line-height:22px;
+	border:1px solid #eaeaea;
+	background-color:#fff;
+	display:none;
+}
+.right_mum .liBao .yinc_2{
+	display:block;
+}
+.right_mum .liBao .lb_bottom1 span{
+	font-size:12px;
+	color:#999999;
 }
 /*小三角*/
 .right_mum .san{

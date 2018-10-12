@@ -1,7 +1,7 @@
 $(function(){
 	$(".top_1").bind("mouseover",function(){
 		$(".top_2").css({
-			display:"block",
+			display:"block"
 		});
 	});
 	$(".top_1").bind("mouseout",function(){
@@ -45,4 +45,45 @@ $(function(){
 			display:"none"
 		});
 	});
-})
+	$(".right_mum").mouseenter(function(){
+		$(".liBao").css({
+			display:"block"
+		});
+	});
+	$(".right_mum").mouseleave(function(){
+		$(".liBao").css({
+			display:"none"
+		});
+	});
+	$(".lb_bottom1").hover(function(){
+		$(this).css({
+			cursor:"default"
+		})
+		$(".yinc_1").css({
+			display:"none"
+		});
+		$(".spa").css({
+			display:"none"
+		});
+		$(".bb").css({
+			color:"black"
+		})
+		$(this).find("div").slideDown(200);
+		$(this).find("span").css({
+			display:"inline-block"
+		});
+		$(this).find("b").css({
+			color:"#a01f23"
+		});
+	},function(){
+		$(this).find("div").css({
+			display:"block"
+		});
+		$(this).find("span").css({
+			display:"inline-block"
+		});
+		$(this).find("b").css({
+			color:"#a01f23"
+		});
+	});
+});
