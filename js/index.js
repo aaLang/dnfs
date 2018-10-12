@@ -1,16 +1,18 @@
 $(function(){
-	$(".top_1").bind("mouseover",function(){
+	$(".top_1").mouseenter(function(){
 		$(".top_2").css({
 			display:"block"
 		});
 	});
-	$(".top_1").bind("mouseout",function(){
+	$(".top_1").mouseleave(function(){
 		$(".top_2").css({
 			display:"none"
 		});
 	});
 	$(".right_shop_2").mouseenter(function(){
-		$(this).find("div").slideDown(300);
+		$(this).find("div").css({
+			display:"block"
+		});
 	});
 	$(".right_shop_2").mouseleave(function(){
 		$(this).find("div").css({
@@ -18,12 +20,14 @@ $(function(){
 		});
 	});
 	$(".right_shop_21").mouseenter(function(){
-		$(this).find("div").slideDown(300);
-	});
-	$(".right_shop_21").mouseleave(function(){
-		$(this).find("div").css({
-			display:"none"
+		$(".right_shop_yin").animate({
+			display:"block"
+		},300);
 		});
+	$(".right_shop_21").mouseleave(function(){
+		$("right_shop_yin").animate({
+			display:"none"
+		},100);
 	});
 	$(".right_qq").mouseenter(function(){
 		$(".qq_1").css({
