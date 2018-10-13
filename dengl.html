@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+	<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/dengl.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<div>
+				<div>
+				<a href="#">周边首页</a>
+				<a href="#">全部商品</a>
+				<a href="#">典藏包专区</a>
+				<a href="#">领取CDK</a>
+				<a href="#">土罐市集</a>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div>
+				<div>
+					<p>账号密码登录</p>
+					<p>推荐使用<a href="#">快速安全登录</a>，防止盗号。</p>
+						<input class="id" id="userId" type="text" placeholder="支持QQ号/邮箱/手机号登录" />
+						<br />
+						<input class="name" id="userName" type="text" placeholder="密码" />
+						<br />
+						<input id="btn" type="submit" value="登录"/>
+						<br />
+					<div>
+						<a href="#">忘了密码？</a>|
+						<a href="#">注册新账号</a>|
+						<a href="#">意见反馈</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="botm_te">
+			<ul>
+				<li>
+					<h3>
+						赠送超值游戏礼包
+					</h3>
+						方便您畅爽体验游戏
+				</li>
+				<li>
+					<h3>
+						专属周边设计
+					</h3>
+						精选游戏素材，独特设计
+				</li>
+				<li>
+					<h3>
+						7天无理由退换货
+					</h3>
+						为您提供售后无忧保障
+				</li>
+			</ul>
+		</div>
+			<div>
+			<p>
+				深圳市合泰文化发展有限公司提供客服支持 | 客服邮箱：service@dnfcity.qq.com
+			</p>
+			<p>
+				Copyright © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED. 腾讯公司 版权所有
+			</p>
+			<p>
+				Copyright @ 2017 NEOPLE Inc., ALL RIGHTS RESERVED
+			</p>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+<script type="text/javascript" src="js/dengl.js" ></script>
+<script type="text/javascript">
+//	function $(str){
+//		if(str.charAt(0)=="#"){
+//			return document.getElementById(str.substring(1));
+//		}else if(str.charAt(0)=="."){
+//			return document.getElementsByClassName(str.substring(1));
+//		}else{
+//			return document.getElementsByTagName(str);
+//		}
+//	}
+$(function(){
+	$("#btn").click(function(){
+	let xhr=new XMLHttpRequest();
+	xhr.open("post","php/denglu.php",true);
+	xhr.onreadystatechange=function(){
+				if(xhr.readyState==4&&xhr.status==200){
+					let squ=xhr.responseText;
+					if(squ==1){
+						location.href="index.html";
+					}else{
+						alert("登录失败");;
+					}
+					
+					
+				}
+			}
+			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			let stt="username="+$("#userId").val()+"&userpass="+$("#userName").val();
+			xhr.send(stt);
+	});
+});
+</script>
