@@ -124,6 +124,7 @@ a:hover{
 	background:url(../img/weixin.png);
 	position:absolute;
 	right:0;
+	top:35px;
 	display:none;
 	
 }
@@ -561,6 +562,7 @@ a:hover{
 }
 /*QQ客服*/
 .right .right_qq{
+	display:block;
 	width:46px;
 	height:98px;
 	background:url(../img/right.png) -5px -340px no-repeat #282725;
@@ -587,4 +589,17 @@ a:hover{
 	margin:10px auto;
 	text-align:center;
 	line-height:28px;
+}
+/*返回顶部*/
+.tOp{
+	width:46px;
+	height:46px;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	display:none;
+	background:url(../img/right.png) -4px -443px no-repeat #282725;
+}
+.tOp:hover{
+	background:url(../img/right.png) -70px -443px no-repeat #282725;
 }

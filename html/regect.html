@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>注册</title>
-		
+		<link rel="shortcut icon" href="../img/bitbug1_favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="../css/regect.css"/>
 	</head>
 	<body>
@@ -62,18 +62,22 @@
 				</div>
 			</div>
 			<form action="" method="post">
-				<input class="nc" id="userName" type="text" placeholder="昵称"/><br />
-				<div id="nameSpan">昵称不能为空</div>
+				<div class="name">
+					<img class="name_img" src="../img/tick.png"/>
+					<input class="nc" id="userName" type="text" placeholder="昵称"/><br />
+					<div id="nameSpan">昵称不能为空</div>
+				</div>
 				<div class="pass">
 					<div class="pass_key">
 					<img class="eye_close" src="../img/eye-close.png"/>
 					<img class="eye" src="../img/eye.png"  />
 					</div>
-					<input class="mm" id="userPass" maxlength="16" type="text" placeholder="密码" />
+					<img class="name_img1" src="../img/tick.png"/>
+					<input class="mm" id="userPass" maxlength="16" type="password" placeholder="密码" />
 					<ul class="passSpan">
-						<li>不能包括空格</li>
-						<li>长度必须为8-16个字符</li>
-						<li>必须包含字母，数字，符号中至少2种</li>
+						<li id="koge">不能包括空格</li>
+						<li id="lengh">长度必须为8-16个字符</li>
+						<li id="stron">必须包含字母，数字，符号中至少2种</li>
 					</ul>
 					<div id="eeor">
 					</div>
@@ -108,6 +112,12 @@
 							<li>中国</li>
 							<li>中国</li>
 							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
+							<li>中国</li>
 						</ul>
 					</div>
 					
@@ -118,7 +128,7 @@
 					<input class="yz_1" type="text" placeholder="短信验证码"/>
 					<input class="yz_2" type="button" value="发送短信验证码"/>
 				</div>
-				<input class="btn" type="submit" value="立即注册"/>
+				<input id="btn" class="btn" type="submit" value="立即注册"/>
 				<div class="kt">
 					<img class="mr xy1"  src="../img/checkbox_check.png"/>
 					<img  class="ko xy1" src="../img/checkbox_normal.png" />

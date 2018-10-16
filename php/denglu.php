@@ -9,8 +9,8 @@
 		mysql_select_db("dnf",$con);
 		$str = "select * from zc where id='$userId' and password='$userName'";
 		$result = mysql_query($str,$con);
-		mysql_close($con);
 		$rows= mysql_num_rows($result);
+		mysql_close($con);
 		if($rows==0){
 			echo "0";
 		}else{

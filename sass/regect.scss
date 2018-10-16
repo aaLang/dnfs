@@ -386,9 +386,25 @@ ul,ol{
                background:url(../img/info.png) 0px 3px no-repeat;
             }
        }
+       .name{
+           width:480px;
+           position:relative;
+           .name_img{
+               position:absolute;
+               right:10px;
+               top:18px;
+               display:none;
+           }
+       }
        .pass{
            width:480px;
            position:relative;
+           .name_img1{
+               position:absolute;
+               right:10px;
+               top:50px;
+               display:none;
+           }
            .pass_key{
                position:absolute;
                right:45px;
@@ -407,5 +423,8 @@ ul,ol{
            padding-left:25px;
            margin-top:15px;
            display:none;
+       }
+       .btn:hover{
+           background:blue;
        }
     }

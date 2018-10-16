@@ -1,64 +1,30 @@
 $(function(){
-	$(".top_1").mouseenter(function(){
-		$(".top_2").css({
-			display:"block"
-		});
+	$(".top_1").hover(function(){
+		$(".top_2").show();
+		},function(){
+		$(".top_2").hide();
 	});
-	$(".top_1").mouseleave(function(){
-		$(".top_2").css({
-			display:"none"
-		});
+	$(".top_2").hover(function(){
+		$(".top_2").show();
+		},function(){
+		$(".top_2").hide();
 	});
-	$(".right_shop_2").mouseenter(function(){
-		$(this).find("div").css({
-			display:"block"
+	$(".right_shop_2").hover(function(){
+		$(this).children("ul").slideDown(300);
+		},function(){
+			$(this).children("ul").slideUp("fast");
 		});
-	});
-	$(".right_shop_2").mouseleave(function(){
-		$(this).find("div").css({
-			display:"none"
+	$(".ul").hover(function(){
+			$(this).show();
+		},function(){
+			$(this).hide();
 		});
-	});
-	$(".right_shop_21").mouseenter(function(){
-		$(".right_shop_yin").animate({
-			display:"block"
-		},300);
+	$(".right_shop_21").hover(function(){
+			$(this).find(".right_shop_yin").show();
+			},function(){
+			$(this).find(".right_shop_yin").hide();
 		});
-	$(".right_shop_21").mouseleave(function(){
-		$("right_shop_yin").animate({
-			display:"none"
-		},100);
-	});
-	$(".right_qq").mouseenter(function(){
-		$(".qq_1").css({
-			display:"block"
-		});
-	});
-	$(".right_qq").mouseleave(function(){
-		$(".qq_1").css({
-			display:"none"
-		});
-	});
-	$(".right_top").mouseenter(function(){
-		$(".mum_1").css({
-			display:"block"
-		});
-	});
-	$(".right_top").mouseleave(function(){
-		$(".mum_1").css({
-			display:"none"
-		});
-	});
-	$(".right_mum").mouseenter(function(){
-		$(".liBao").css({
-			display:"block"
-		});
-	});
-	$(".right_mum").mouseleave(function(){
-		$(".liBao").css({
-			display:"none"
-		});
-	});
+	
 	$(".lb_bottom1").hover(function(){
 		$(this).css({
 			cursor:"default"
@@ -90,4 +56,18 @@ $(function(){
 			color:"#a01f23"
 		});
 	});
+	//判断滚动条的距离
+		$(window).scroll(function(){
+//		var s=$(window).scrollTop();
+//		console.log(s)
+		if($(window).scrollTop() >= 500){
+		$(".tOp").fadeIn(1000);
+		} else{
+		$(".tOp").fadeOut(1000);
+		}
+		});
+//		点击返回顶部
+		$(".tOp").click(function(){
+			$("html,body").animate({scrollTop:0},10);
+		})
 });
