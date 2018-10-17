@@ -255,8 +255,6 @@ var img=[
 					}else if(squ==2){
 						alert("服务器出错,请重新注册");
 					}
-					
-					
 				}
 			}
 			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");

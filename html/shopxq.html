@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>DNF周边商城</title>
-	<link rel="shortcut icon" href="img/bitbug_favicon.ico" />
-	<link type="text/css" rel="stylesheet" href="css/index.css" />
-	<link rel="stylesheet" type="text/css" href="css/index1.css"/>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="shortcut icon" href="../img/bitbug_favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopxq.css"/>
 	</head>
-<body>
-	<!--头部导航-->
-	<div class="tbox">
+	<body>
+			<!--背景-->
+		<div class="bg">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+			<div class="bg4"></div>
+		</div>
+		<!--头部信息-->
+		<div class="tbox">
 			<div class="topBox">
 				<!--左边导航-->
 				<div class="leftTop">
 					<a>欢迎来到DNF周边商城</a>
 					<span class="top_1">
-						人气周边商品
-						<div>
+						人气周边商品	
+						<div class="top_show">
 							<ul class="top_2">
 								<li>
 									<a href="#">
-										<img src="img/shop203.jpg"/>
+										<img src="../img/shop200.jpg"/>
 									</a>
 									<a href="#" class="top_shop">
 										卢克帽子
@@ -34,7 +41,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="img/shop200(1).jpg"/>
+										<img src="../img/shop200(1).jpg"/>
 									</a>
 									<a href="#" class="top_shop">
 										许愿深渊柱感应打火机
@@ -48,7 +55,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="img/shop200(2).jpg"/>
+										<img src="../img/shop200(2).jpg"/>
 									</a>
 									<a href="#" class="top_shop">
 										土罐音响
@@ -62,7 +69,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="img/shop200(3).jpg"/>
+										<img src="../img/shop200(3).jpg"/>
 									</a>
 									<a href="#" class="top_shop">
 										缔造者  Q版手办
@@ -76,7 +83,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="img/shop200(4).jpg"/>
+										<img src="../img/shop200(4).jpg"/>
 									</a>
 									<a href="#" class="top_shop">
 										卢克打火机
@@ -90,7 +97,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<img src="img/shop200(5).jpg"/>
+										<img src="../img/shop200(5).jpg"/>
 									</a>
 									<a href="#" class="top_shop">
 										卢克卡套
@@ -108,33 +115,36 @@
 				</div>
 				<!--右边导航-->
 				<div class="rightTop">
-					<a href="dengl.html" class="rightTop_shop_1">请QQ登录</a>
+					<font>欢迎您,</font>
+					<a href="" class="rightTop_shop_1">xxx</a>
+					<a href="#">购物车</a>
+					<a href="#">退出</a>
 					<span class="right_shop_2">
 						我的订单
-							<ul class="right_shop_yin">
-								<li><a href="#">我的订单</a></li>
-								<li><a href="#">我的收藏</a></li>
-								<li><a href="#">我的优惠券</a></li>
-								<li><a href="#">我的CDK</a></li>
-							</ul>
+							<div class="shop_yin">
+								<a href="#">我的订单</a>
+								<a href="#">我的收藏</a>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的CDK</a>
+							</div>
 					</span>
 					<span class="right_shop_2">
 						周边公告
-							<ul class="right_shop_yin">
-								<li><a href="#">我的订单</a></li>
-								<li><a href="#">我的收藏</a></li>
-								<li><a href="#">我的优惠券</a></li>
-								<li><a href="#">我的CDK</a></li>
-							</ul>
+						<div class="shop_yin shop_new">
+								<a href="#">专题活动中心</a>
+								<a href="#">特殊体验服中奖名单</a>
+								<a href="#">周边商城产品销售权说明</a>
+								<a href="#">周边商城发货公告</a>
+								<a href="#">客服服务公告</a>
+							</div>
 					</span>
 					<span class="right_shop_2">
 						帮助中心
-							<ul class="right_shop_yin">
-								<li><a href="#">我的订单</a></li>
-								<li><a href="#">我的收藏</a></li>
-								<li><a href="#">我的优惠券</a></li>
-								<li><a href="#">我的CDK</a></li>
-							</ul>
+							<div class="shop_yin">
+								<a href="#">购物指南</a>
+								<a href="#">配送方式</a>
+								<a href="#">售后服务</a>
+							</div>
 					</span>
 					<span class="right_shop_21">
 						手机周边
@@ -143,11 +153,11 @@
 					</span>
 				</div>
 			</div>
-	</div>
+		</div>
 	<!--搜索框-->
 	<div class="top">
 			<div class="top_logo">
-				<a class="logo" href="#"><img src="img/dnflogo.png" /></a>
+				<a class="logo" href="#"><img src="../img/dnflogo.png" /></a>
 				<div class="logo_sousu">
 					<div class="sousu">
 					<input name="textfied" class="sousu1"/>
@@ -161,113 +171,22 @@
 					<a href="#">毛绒</a>
 				</div>
 			</div>
-		</div>
-	<!--导航-->
+	</div>
+
+	<!--nav-->
 	<div class="nav">
-			<div class="nav_1">
-				<span>勇士周边类目</span>
-				<a href="#">全部商品</a>
-				<a href="#">典藏包专区</a>
-				<a href="#">领取CDK</a>
-				<a href="#">土罐市集</a>
-			</div>
-		</div>
-	<!--轮播图-->
-	<div class="banner" id="ban">
-		<img src="img/flash222.jpg" />
-		<div class="ban_box">
-		<div class="ban_left">
-			<div class="ban_leftchild ban_leftchild1">
-				<div class="bna_left11">
-						<div class="bna_left111">
-							<h3><a class="shouc" href="#">礼包收藏</a></h3>
-							<a href="#">典藏包 </a>
-							<a href="#">手办</a>
-							<a href="#">武器</a>
-						</div>
-				</div>
-				
-			</div>
-			<div class="ban_leftchild ban_leftchild2">
-				
-				<div class="bna_left11">
-						<div class="bna_left111">
-							<h3><a class="shouc" href="#">数码电子</a></h3>
-							<a href="#">手表</a>
-							<a href="#">火机</a>
-							<a href="#">手机配件</a>
-							<a href="#">鼠标垫</a>
-						</div>
-				</div>
-			</div>
-			<div class="ban_leftchild ban_leftchild3">
-				
-				<div class="bna_left11">
-						<div class="bna_left111">
-							<h3><a class="shouc" href="#">服饰日用</a></h3>
-							<a href="#">短袖 </a>
-							<a href="#">长袖</a>
-							<a href="#">长裤</a>
-							<a href="#">配饰 </a>
-							<a href="#">毛绒</a>
-							<a href="#">箱包</a>
-							<a href="#">海报 </a>
-							<a href="#">水杯</a>
-							<a href="#">手套</a>
-							<a href="#">口罩</a>
-							<a href="#">卡牌</a>
-							<a href="#">文件夹</a>
-						</div>
-				</div>
-			</div>
-			<div class="ban_leftchild ban_leftchild4">
-				<a href="#">
-					领取CDKey礼包
-				</a>
-			</div>
-		</div>
-		<div class="ban_right">
-			<div class="ban_right-top">
-				<span>周边公告</span>
-				<ul>
-					<li>
-						<a href="#">
-							特殊体验服中奖名单
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							周边商城产品销售权说明
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							周边商城发货公告
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							客服服务公告
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							十周年专属幸运码中奖名单
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="ban_right-botm">
-				<a href="#">
-					<img src="img/ad_hot12.png" />
-				</a>
+		<div class="nav_1">
+			<a href="#" class="nav_left">周边首页</a>
+			<a href="#">全部商品</a>
+			<a href="#">典藏包专区</a>
+			<a href="#">领取CDK</a>
+			<a href="#">土罐市集</a>
+			<div class="nav_right">
+				<div class="nav_right1"></div>
 			</div>
 		</div>
 	</div>
-		<span id="leftJian"></span>
-		<span id="rightJian"></span>
-</div>
-	<!--侧边栏-->
+<!--侧边栏信息-->
 	<div class="right">
 		<!--侧边栏头部信息-->
 		<div class="right_top">
@@ -281,14 +200,15 @@
 				</ul>
 				<div class="war">勇士足迹</div>
 				<div class="war_1">
-					<a href="#" title="魔枪士战魂手办"><img src="img/shop80.jpg"/></a>
-					<a href="#" title="守护者 Q版手办"><img src="img/shop80(1).jpg"/></a>
-					<a href="#" title="《使徒来袭Ⅱ》典藏包(黑色卡套)"><img src="img/shop80(2).jpg"/></a>
-					<a href="#" title="魔盒典藏包"><img src="img/shop80(3).jpg"/></a>
+					<a href="#" title="魔枪士战魂手办"><img src="../img/shop80.jpg"/></a>
+					<a href="#" title="守护者 Q版手办"><img src="../img/shop80(1).jpg"/></a>
+					<a href="#" title="《使徒来袭Ⅱ》典藏包(黑色卡套)"><img src="../img/shop80(2).jpg"/></a>
+					<a href="#" title="魔盒典藏包"><img src="../img/shop80(3).jpg"/></a>
 				</div>
 				<span class="san"></span>
 			</div>
 		</div>
+		
 		<!--侧边栏礼包-->
 		<div class="right_mum">
 			<div class="liBao">
@@ -394,120 +314,17 @@
 		
 		
 	</div>
+	
+		
 	<!--返回顶部-->
 	<div class="tOp">
 		
 	</div>
-	<!--专区-->
-	<div class="zhuan">
-		<div class="zhuan_1">
-			<a href="#">
-				<img src="img/x18.jpg" />
-			</a>
-			<a href="#">
-				<img src="img/x19.jpg" />
-			</a>
-			<a href="#">
-				<img src="img/x17.jpg" />
-			</a>
-			<a href="#">
-				<img src="img/da7.jpg" />
-			</a>
-		<ul>
-			<li>
-				<a href="#">
-					<img src="img/1257.jpg" />
-				</a>
-				<a href="#">守护者  Q版手办</a>
-				<div>
-					<span>98元</span>
-					喜欢:<span>1042</span>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/1256.jpg" />
-				</a>
-				<a href="#">圣职者  Q版手办</a>
-				<div>
-					<span>98元</span>
-					喜欢:<span>3667</span>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/1388.jpg" />
-				</a>
-				<a href="#">使徒 赫尔德 T恤</a>
-				<div>
-					<span>88元</span>
-					喜欢:<span>278</span>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/1390.jpg" />
-				</a>
-				<a href="#">深渊派对 T恤</a>
-				<div>
-					<span>88元</span>
-					喜欢:<span>48</span>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/1391.jpg" />
-				</a>
-				<a href="#">不枉少年时 T恤</a>
-				<div>	
-					<span>88元</span>
-					喜欢:<span>350</span>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/1392.jpg" />
-				</a>
-				<a href="#">因为热爱 T恤</a>
-				<div>
-					<span>88元</span>
-					喜欢:<span>278</span>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/1127.jpg" />
-				</a>
-				<a href="#">波比(绿)</a>
-				<div>
-					<span>98元</span>
-					喜欢:<span>960</span>
-				</div>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/1172.jpg" />
-				</a>
-				<a href="#">女鬼剑 Q版手办</a>
-				<div>
-					<span>98元</span>
-					喜欢:<span>6941</span>
-				</div>
-			</li>
-		</ul>
-		</div>
-		<div class="zhuan_2">
-			<a href="#">
-				<img src="img/zd4.jpg" />
-			</a>
-			<a href="#">
-				<img src="img/yd5.jpg" />
-			</a>
-		</div>
-	</div>
+	<!--页尾-->
 	<div class="bottom">
 		<div class="tu">
 			<a href="#">
-				<img src="img/bottom_ad.jpg" />
+				<img src="../img/bottom_ad.jpg" />
 			</a>
 		</div>
 		<!--特色-->
@@ -581,13 +398,6 @@
 	</div>
 	</body>
 </html>
-<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/anm.js"></script>
-<script type="text/javascript">
-	window.onload = function(){
-		let s1 = new Slider($("#ban"),$("#leftJian"),$("#rightJian"),1365,420,["img/flash222.jpg","img/flash226.jpg","img/flash232.jpg"],
-				80,5,"#ccc","red",
-				false,2500);
-	}
-</script>
+<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../js/shopxq.js"></script>

@@ -3,9 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>购物车</title>
+		<link rel="shortcut icon" href="../img/bitbug_favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/shop.css"/>
 	</head>
 	<body>
+		<!--背景-->
+		<div class="bg">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+			<div class="bg4"></div>
+		</div>
+		<!--头部信息-->
 		<div class="tbox">
 			<div class="topBox">
 				<!--左边导航-->
@@ -144,6 +154,99 @@
 				</div>
 			</div>
 		</div>
+	<!--搜索框-->
+	<div class="top">
+			<div class="top_logo">
+				<a class="logo" href="#"><img src="../img/dnflogo.png" /></a>
+				<div class="logo_sousu">
+					<div class="sousu">
+					<input name="textfied" class="sousu1"/>
+					<input name="submit" class="sousu2"/>
+					</div>
+					<a href="#">典藏包</a>
+					<a href="#">魔枪士</a>
+					<a href="#">塞丽亚</a>
+					<a href="#">配饰</a>
+					<a href="#">手表</a>
+					<a href="#">毛绒</a>
+				</div>
+			</div>
+		</div>
+	<!--主体-->
+	<div class="nav">
+		<span class="nav_left" >
+			购物车页
+		</span>
+		<span class="nav_ce"></span>
+		<div class="nav_right">
+			<div class="nav_right1"></div>
+		</div>
+	</div>
+	<div class="banner">
+		<ul>
+			<li class="li_sp">商品</li>
+			<li class="li_dj">单价(元)</li>
+			<li class="li_sl">数量 </li>
+			<li class="li_xj">小计</li>
+			<li class="li_cz">操作</li>
+		</ul>
+		<div class="ban_wu">
+			〒_〒 购物车暂无商品！ 
+			<a href="#">周边首页</a>
+			<a href="#">查看全部周边</a>
+		</div>
+		<div class="ban_ts">
+			<a href="#">继续购物</a>
+			承诺：赠送游戏CDK礼包 / 7天无理由退换货 / 100%官方正品
+		</div>
+		<div class="ban_js">
+			<div class="ban_js1">
+				未满足免运费 , 全场购物满200元包邮
+				<a href="#">查看凑单商品</a>
+			</div>
+			<div class="ban_hj">
+				<span class="sl">数量：<font>0</font></span>
+				<span class="dj">商品金额：￥<font>0</font></span>
+			</div>
+			<a class="js" href="#">
+				去结算
+			</a>
+		</div>
+	</div>
+	
+	<!--凑单商品-->
+	<div class="cd">
+		<div class="cd_sp1">
+			<div class="cd_hed">
+				<h3>凑单商品</h3>
+			</div>
+			<div class="cd_ban">
+				<ul id="ul_cd">
+					<!--<li>
+						<a href="#">
+							<img src="../img/shop200(2).jpg"/>
+						</a>
+						<a class="cd_mc" href="#">土罐音响</a>
+						<div class="ms">
+							<span>188元</span>
+							<span>0人点评</span>
+						</div>
+						<a class="cd_jr" href="#">加入购物车</a>
+					</li>-->
+					
+				</ul>
+			</div>
+			<div class="cd_hed">
+				<h3>塞丽亚为你推荐</h3>
+			</div>
+			<div class="cd_ban">
+				<ul id="cd_tj">
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--侧边栏信息-->
 	<div class="right">
 		<!--侧边栏头部信息-->
 		<div class="right_top">
@@ -165,6 +268,7 @@
 				<span class="san"></span>
 			</div>
 		</div>
+		
 		<!--侧边栏礼包-->
 		<div class="right_mum">
 			<div class="liBao">
@@ -270,7 +374,90 @@
 		
 		
 	</div>
+	
+		
+	<!--返回顶部-->
+	<div class="tOp">
+		
+	</div>
+	<!--页尾-->
+	<div class="bottom">
+		<div class="tu">
+			<a href="#">
+				<img src="../img/bottom_ad.jpg" />
+			</a>
+		</div>
+		<!--特色-->
+		<div class="botm_te">
+			<ul>
+				<li>
+					<h3>
+						赠送超值游戏礼包
+					</h3>
+						方便您畅爽体验游戏
+				</li>
+				<li>
+					<h3>
+						专属周边设计
+					</h3>
+						精选游戏素材，独特设计
+				</li>
+				<li>
+					<h3>
+						7天无理由退换货
+					</h3>
+						为您提供售后无忧保障
+				</li>
+			</ul>
+		</div>
+		<!--帮助信息-->
+		<div class="help">
+			<ul>
+				<li>
+					<h3><a href="#">购物指南</a></h3>
+					<a href="#">常见问题</a>
+					<a href="#">如何查看订单</a>
+					<a href="#">网站订购流程</a>
+					<a href="#">用户登录及注册</a>
+				</li>
+				<li>
+					<h3><a href="#">配送方式</a></h3>
+					<a href="#">全场满200元免运费</a>
+					<a href="#">配送范围及运费</a>
+				</li>
+				<li>
+					<h3><a href="#">售后服务</a></h3>
+					<a href="#">7天无理由退货</a>
+					<a href="#">如何办理退换货</a>
+					<a href="#">换货政策说明</a>
+				</li>
+				<li>
+					<h3>客服中心<span>（9:00 - 24:00）</span></h3>
+					<p>客服中心QQ:800093207</p>
+					<p>申诉邮箱:dnfcity@hetaionline.com</p>
+				</li>
+				<li>
+					<p></p>
+					<span>扫码关注微信周边</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="foot">
+		<div>
+			<p>
+				深圳市合泰文化发展有限公司提供客服支持 | 客服邮箱：service@dnfcity.qq.com
+			</p>
+			<p>
+				Copyright © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED. 腾讯公司 版权所有
+			</p>
+			<p>
+				Copyright @ 2017 NEOPLE Inc., ALL RIGHTS RESERVED
+			</p>
+		</div>
+	</div>
 	</body>
 </html>
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
 <script type="text/javascript" src="../js/shop.js"></script>
