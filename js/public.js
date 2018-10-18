@@ -7,14 +7,18 @@ $(function(){
 	});
 //	右侧头部显示隐藏
 	$(".right_shop_21").hover(function(){
+		$(this).addClass("right_shop_21_hover");
 		$(this).children(".right_shop_yin").slideDown(300);
 	},function(){
 		$(this).children(".right_shop_yin").slideUp(100);
+		$(this).removeClass("right_shop_21_hover");
 	});
 	$(".right_shop_2").hover(function(){
+		$(this).addClass("right_shop_2_hover");
 		$(this).children(".shop_yin").slideDown(300);
 	},function(){
 		$(this).children(".shop_yin").slideUp(100);
+		$(this).removeClass("right_shop_2_hover");
 	});
 //	侧边栏QQ客服显示隐藏
 	$(".right_qq").mouseenter(function(){
